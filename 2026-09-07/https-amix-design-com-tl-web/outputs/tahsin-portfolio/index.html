@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05060a" />
+    <title>Tahsin R. Ayon — Aspiring Game Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="world" aria-hidden="true"></canvas>
+    <div class="noise" aria-hidden="true"></div>
+
+    <section class="gateway" id="gateway" aria-label="Enter portfolio">
+      <div class="gateway-image"></div>
+      <div class="gateway-vignette"></div>
+      <div class="gateway-ui">
+        <p class="eyebrow">TAHSIN R. AYON / PORTFOLIO_01</p>
+        <h1>ENTER<br><span>THE WORLD</span></h1>
+        <button class="enter-button" id="enterButton"><span>CLICK TO EXPAND</span><i>↗</i></button>
+        <p class="gateway-hint">A personal game-development portfolio</p>
+      </div>
+      <div class="gateway-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+    </section>
+
+    <main id="site" aria-hidden="true">
+      <header class="topbar">
+        <a href="#top" class="logo">TA<span>_</span>RA</a>
+        <nav aria-label="Main navigation">
+          <a href="#profile">Profile</a><a href="#skills">Skills</a><a href="#visions">Visions</a><a href="#work">Work</a>
+        </nav>
+        <button class="resume-trigger" id="resumeTrigger">RÉSUMÉ <span>↗</span></button>
+      </header>
+
+      <section class="hero" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">ASPIRING GAME DEVELOPER / DHAKA, BANGLADESH</p>
+          <h2>BUILDING<br><em>WORLDS</em><br>WORTH <span>ENTERING.</span></h2>
+          <p class="hero-description">I am Tahsin R. Ayon, a CSE student and emerging game developer pursuing cinematic, player-first experiences.</p>
+          <a class="scroll-link" href="#profile">DISCOVER THE PLAYER <b>↓</b></a>
+        </div>
+        <div class="hero-plate reveal delay"><span>01</span><span>PLAYER PROFILE<br>ACTIVE</span></div>
+      </section>
+
+      <section class="profile section" id="profile">
+        <div class="section-label"><span>01</span> PLAYER PROFILE</div>
+        <div class="profile-grid">
+          <h2 class="display reveal">THE PLAYER<br>BEHIND THE<br><em>SCREEN.</em></h2>
+          <div class="profile-content reveal delay">
+            <p class="lead">As a lifelong gamer, I’m fascinated by games’ ability to transport people beyond everyday life and create unforgettable experiences.</p>
+            <p>I aspire to build immersive worlds with the same atmosphere, emotion, and discovery that inspired me to become a game developer. I am learning from the ground up—one system, one story, and one line of code at a time.</p>
+            <dl class="stats">
+              <div><dt>LOCATION</dt><dd>Dhaka, Bangladesh</dd></div>
+              <div><dt>STATUS</dt><dd>CSE · 2nd Year</dd></div>
+              <div><dt>FOCUS</dt><dd>Game Development</dd></div>
+              <div><dt>EDUCATION</dt><dd>Daffodil International University</dd></div>
+            </dl>
+            <div class="profile-portrait" role="img" aria-label="Portrait of Tahsin R. Ayon"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills section" id="skills">
+        <div class="section-label"><span>02</span> CORE SYSTEMS</div>
+        <div class="skills-heading"><h2 class="display reveal">LEARNING THE<br><em>LANGUAGE</em> OF PLAY.</h2><p class="reveal delay">A developing technical foundation, built for the long game.</p></div>
+        <div class="skill-list">
+          <article class="skill reveal"><span>01</span><h3>C PROGRAMMING</h3><p>COMPLETED</p><div class="meter"><i style="--progress:76%"></i></div></article>
+          <article class="skill reveal"><span>02</span><h3>JAVA</h3><p>IN PROGRESS</p><div class="meter"><i style="--progress:28%"></i></div></article>
+          <article class="skill reveal"><span>03</span><h3>GAME DESIGN</h3><p>BUILDING FOUNDATIONS</p><div class="meter"><i style="--progress:18%"></i></div></article>
+        </div>
+      </section>
+
+      <section class="visions section" id="visions">
+        <div class="section-label"><span>03</span> CREATIVE DIRECTION</div>
+        <div class="vision-intro"><h2 class="display reveal">THE GAMES I<br>WANT TO <em>MAKE.</em></h2><p class="reveal delay">Cinematic worlds with consequence, tension, and a reason to keep moving forward.</p></div>
+        <div class="influences reveal"><span>INFLUENCED BY</span> RED DEAD REDEMPTION 2 · RESIDENT EVIL · UNCHARTED 4 · APEX LEGENDS · CALL OF DUTY · GOD OF WAR</div>
+        <div class="vision-grid">
+          <article class="vision-card reveal"><div class="vision-art frontier"></div><div class="card-shade"></div><div class="card-content"><span>WORLD TYPE / 01</span><h3>OPEN-WORLD<br>ODYSSEYS</h3><p>Expansive, reactive worlds where exploration feels personal and every horizon invites a story.</p></div></article>
+          <article class="vision-card reveal delay"><div class="vision-art quiet-wing"></div><div class="card-shade"></div><div class="card-content"><span>WORLD TYPE / 02</span><h3>STORIES THAT<br>STAY WITH YOU</h3><p>Focused narrative experiences where atmosphere, character, and tension shape every moment.</p></div></article>
+        </div>
+      </section>
+
+      <section class="work section" id="work">
+        <div class="section-label"><span>04</span> PROJECT ARCHIVE</div>
+        <div class="work-head"><h2 class="display reveal">NEXT<br><em>MISSIONS.</em></h2><p class="reveal delay">The first entries are waiting to be made.</p></div>
+        <div class="project-grid">
+          <article class="project-card reveal"><div class="project-image frontier"></div><div class="project-data"><span>PROJECT 01 / CONCEPT STAGE</span><h3>FRONTIER OF ASH</h3><p>An original open-world fantasy RPG concept.</p><b>COMING SOON</b></div></article>
+          <article class="project-card reveal delay"><div class="project-image quiet-wing"></div><div class="project-data"><span>PROJECT 02 / CONCEPT STAGE</span><h3>THE QUIET WING</h3><p>An original supernatural narrative-horror concept.</p><b>COMING SOON</b></div></article>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact"><p class="eyebrow">AVAILABLE FOR CONVERSATION</p><h2 class="display reveal">LET'S MAKE<br>SOMETHING <em>MEMORABLE.</em></h2><a href="mailto:xruisoxenon76@gmail.com" class="email reveal">xruisoxenon76@gmail.com <span>↗</span></a><p class="footnote">Social links will be added soon.</p></section>
+      <footer><span>© 2026 TAHSIN R. AYON</span><span>DESIGNED FOR THE NEXT LEVEL</span></footer>
+    </main>
+
+    <dialog id="resumeDialog" class="resume-dialog"><button class="close-resume" id="closeResume" aria-label="Close résumé">×</button><div class="resume-sheet"><p class="eyebrow">PLAYER PROFILE / RÉSUMÉ</p><h2>Tahsin R. Ayon</h2><p class="resume-title">Aspiring Game Developer</p><div class="resume-columns"><section><h3>PROFILE</h3><p>A Computer Science and Engineering student building the creative and technical foundation for a career in game development.</p><h3>CONTACT</h3><p>Dhaka, Bangladesh<br><a href="mailto:xruisoxenon76@gmail.com">xruisoxenon76@gmail.com</a></p></section><section><h3>EDUCATION</h3><p><b>Daffodil International University</b><br>B.Sc. in Computer Science & Engineering<br>2nd Year · 4th Semester</p><p><b>Rajuk Uttara Model College</b><br>HSC · GPA 5.00</p><p><b>Secondary School Certificate</b><br>SSC · GPA 5.00</p><h3>SKILLS</h3><p>C Programming · Java (beginner) · Game Design Foundations</p></section></div></div></dialog>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
